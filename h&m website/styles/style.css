@@ -1,0 +1,118 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+@font-face {
+	font-family: "HMsans";
+	src:url("/fonts/HM-Sans-Regular/HM-Sans-Regular.ttf")
+}
+
+
+/****************/
+/*    HEADER    */
+/****************/
+body{
+	background-color: #faf9f8;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 1em 1em 1em;
+	background-color: #faf9f8;
+	top: 0;
+	width: 100%;
+	position: fixed;
+}
+
+header img{
+	height: 1.5em;
+}
+
+header nav img{
+	height: 1.2em;
+	align-items: center;
+	margin-top: 0.2em;
+}
+
+header ul{
+	display: flex;
+	list-style-type: none;
+	gap: 1.5em;
+	margin: 0;
+	margin-right: 1em;
+}
+/****************/
+/*     TEXT     */
+/****************/
+
+h1, h2, h3, p{
+	font-family: "HMsans";
+}
+
+h1{
+	margin: 7em 2em 2em 2em;
+	font-size: .9em;
+	font-weight:300;
+	text-align: center;
+}
+
+/******************************/
+/*   section eerste blokje    */
+/******************************/
+
+.block1{
+	display: grid;
+	width: 21.375em;
+	height: 21.375em;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.img1{
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+	height: 21.375em;
+	z-index: 0;
+}
+
+.block1 section{
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+	background: linear-gradient(180deg,transparent 50%,rgba(0,0,0,.35));
+	background-size: contain;
+	z-index: 10;
+}
+
+.block1 h2{
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
+
+.block1 h3{
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
+
+.block1 p{
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+}
