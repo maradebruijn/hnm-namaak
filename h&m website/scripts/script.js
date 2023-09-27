@@ -33,23 +33,30 @@ var merk2 = document.querySelector("#merk2")
 var merk3 = document.querySelector("#merk3")
 var merk4 = document.querySelector("#merk4")
 
+var shop = document.querySelector("#shop")
+var ddshop = document.querySelector("#shop section")
+var shopopen = 'nee'
+
+var corp = document.querySelector("#corp")
+var ddcorp = document.querySelector("#corp section")
+var corpopen = 'nee'
+
+var help = document.querySelector("#help")
+var ddhelp = document.querySelector("#help section")
+var helpopen = 'nee'
+
+
 var spooky = document.querySelector(".spooky")
-var dropdwn = document.querySelector(".spooky ul")
+var dropdwn1 = document.querySelector(".spooky ul")
 
-var open = 'nee'
+var open1 = 'nee'
 
-spooky.addEventListener("click", function(){
 
-    if(open=='ja'){
-        dropdwn.classList.remove('open');
-        open = 'nee'
-    }
-    else{
-        dropdwn.classList.add('open');
-        open = 'ja'
-    }
 
-})
+
+
+
+
 
 rec1.addEventListener("click", function(){
     recslide1.scrollIntoView({ block: "center", inline: "start"});
@@ -87,7 +94,15 @@ rec3.addEventListener("click", function(){
     rec2.classList.remove('clicked');
 })
 
+recslide1.addEventListener("scroll", (event) =>{
+    
+    rec1.classList.add('unclicked');
+    rec1.classList.remove('clicked');
+    rec2.classList.remove('unclicked');
+    rec2.classList.add('clicked');
 
+
+})
 
 
 knop1.addEventListener("click", function(){
@@ -230,3 +245,62 @@ mknop4.addEventListener("click", function(){
     mknop3.classList.remove('clicked');
 })
     
+
+
+
+
+spooky.addEventListener("click", function(){
+
+    if(open1=='ja'){
+        dropdwn1.classList.remove('open');
+        open1 = 'nee'
+    }
+    else{
+        dropdwn1.classList.add('open');
+        open1 = 'ja'
+    }
+
+})
+
+
+shop.addEventListener("click", function(){
+
+    if(shopopen=='ja'){
+        ddshop.classList.remove('open');
+        shopopen = 'nee'
+    }
+    else{
+        ddshop.classList.add('open');
+        shopopen = 'ja'
+    }
+
+})
+
+
+corp.addEventListener("click", function(){
+
+    if(corpopen=='ja'){
+        ddcorp.classList.remove('open');
+        corpopen = 'nee'
+    }
+    else{
+        ddcorp.classList.add('open');
+        corpopen = 'ja'
+    }
+
+})
+
+
+
+help.addEventListener("click", function(){
+
+    if(helpopen=='ja'){
+        ddhelp.classList.remove('open');
+        helpopen = 'nee'
+    }
+    else{
+        ddhelp.classList.add('open');
+        helpopen = 'ja'
+    }
+
+})

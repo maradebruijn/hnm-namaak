@@ -41,7 +41,7 @@ ul{
 /*     TEXT     */
 /****************/
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p, a{
 	font-family: "HMsans";
 }
 
@@ -141,6 +141,7 @@ header{
 	top: 0;
 	width: 100%;
 	position: fixed;
+	z-index: 20;
 }
 
 header img{
@@ -482,7 +483,59 @@ header ul{
 /*      laatste sectie        */
 /******************************/
 
-.magazine{
+.lastpart{
 	background-color: rgb(244, 237, 221);
 	width: 100%;
+}
+
+.magazine{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.magazine h2{
+	padding-top: 2.3em;
+}
+
+.magazine a{
+	text-decoration: underline;
+}
+
+.magazine h2, .magazine p, .magazine a:first-of-type{
+	margin-bottom: .3em;
+	margin-top: 2em;
+}
+
+.story{
+	width: 17em;
+	margin: 0 auto;
+	margin-top: 2.5em;
+	background-color: white;
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+.story img{
+	width: 17em;
+}
+
+.story h2{
+	font-size: .8em;
+	text-transform: uppercase;
+}
+
+.story a{
+	margin: 5em;
+}
+
+/******************************/
+/*          footer            */
+/******************************/
+
+footer{
+	background-color: lightgray;
+}
+
+footer h2:hover{
+	color: red;
 }
