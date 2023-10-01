@@ -33,15 +33,15 @@ var merk2 = document.querySelector("#merk2")
 var merk3 = document.querySelector("#merk3")
 var merk4 = document.querySelector("#merk4")
 
-var shop = document.querySelector("#shop")
+var shop = document.querySelector("#shop article")
 var ddshop = document.querySelector("#shop section")
 var shopopen = 'nee'
 
-var corp = document.querySelector("#corp")
+var corp = document.querySelector("#corp article")
 var ddcorp = document.querySelector("#corp section")
 var corpopen = 'nee'
 
-var help = document.querySelector("#help")
+var help = document.querySelector("#help article")
 var ddhelp = document.querySelector("#help section")
 var helpopen = 'nee'
 
