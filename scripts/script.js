@@ -71,6 +71,7 @@ var bron = document.querySelector('#bron')
 
 // deze functies zorgen ervoor dat wanneer je op een rood naviagtie bolletje klikt, je naar een bepaalde slide
 // wordt doorgestuurd. deze slide wordt zo naar het midden van jouw scherm gebracht
+//https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
 
 
 rec1.addEventListener("click", function(){
