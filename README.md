@@ -57,13 +57,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met bevindingen die in de test naar voren kwamen:
   
-  . Veel gebruik gemaakt van div
+  - Veel gebruik gemaakt van div
 
-  . Geen h1
+  - Geen h1
 
-  . Geen alt text
+  - Geen alt text
 
-  . Alle fotos hadden verwarrende namen, zoals asdkh6ad99.jpg
+  - Alle fotos hadden verwarrende namen, zoals asdkh6ad99.jpg
+
+  - Een aantal links zien er niet uit als links, maar als normale tekst
+
+  - Wel werkt de focus state en screenreader goed
 
 
 </details>
@@ -91,26 +95,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Op dit moment ben ik vooral bezig met alle content van de website over te zetten naar de mijne. De header heb ik al bovenaan staan, en hij gaat ook mee wanneer je scrollt.
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ### Vragen voor tijdens de meeting
+  - is er iets waar je beter in het begin al rekening mee kunt houden?
+  - mogen classes, of moet alles met nth of type?
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - goed opletten waar ik classes gebruik
+  - verder zo door gaan
 
 </details>
 
@@ -123,26 +119,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Op dit moment ben ik bezig met de horizontale secties scrollable te maken, en dan ook de knopjes mee te laten bewegen.
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  ### Vragen voor tijdens de meeting
+  - hoe laat ik de pagina alleen horizontaal scrollen, en niet verticaal?
+  - is de manier waarop ik sections gebruik oke?
+  
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - horiztontaal scrollen blijkt erg lastig, ik moet nog thuis verder kijken
+  - sections zijn oke
 
 </details>
 
@@ -155,7 +144,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Lijst met verbeteringen en dingen waar nog aan gewerkt kan worden:
+  
+  - geen divjes
+
+  - alle foto's hebben nu alt tekst
+
+  - de bestanden hebben logischere namen, en zijn makkelijker te onthouden
+
+  - list content zit in een list
+
+  - audio speelt niet van zichzelf af, moet getriggered worden
+
+  - de focus state gaat niet over buttons heen, maar dat kan een probleem van de laptop zelf zijn
+
+  - nog geen h1, die moet bij het eerste plaatje komen
 
 </details>
 
@@ -168,26 +171,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Mijn website is bijna af. Ik ben op dit moment eigenlijk vooral bezig met puntjes op de i te zetten.
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  ### Vragen voor tijdens de meeting
+  - is er iets waar ik dringend aandacht aan moet besteden?
+  - is deze pagina genoeg, of moet ik ook nog een tweede toevoegen?
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - deze pagina is genoeg
+  - vooral nog bezig met de extra's van de surface plane
 
 </details>
 
@@ -200,6 +194,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
 
   ### Je uitkomst - karakteristiek screenshots:
+
+  de surface plane elementen die ik heb gebruikt:
+  - animatie (wishlist)
+  - audio (wishlist)
+  - dom-manipulatie (classes verwijderen en toevoegen, tekst aanpassen met java (dat laatste is ook mijn easteregg!!))
+  - advanced positioning (met z-index gewerkt, en position: absolute bij de header)
+  - scroll animatie (scroll-behaviour: smooth bij alle horizontale scroll-mogelijkheden)
+  
+  - micro-interactie (bij het uitklappen van het 'spooky' dropdown menu, veranderd het plusje in een minnetje. Ook wanneer je over een navigatie bolletje hovered, wordt de border rood. Als je hierop klikt, wordt deze helemaal rood)
+
   <img src="readme-images/eind1.png" width="375px" alt="mijn eindoplevering voor FED">
   <img src="readme-images/eind2.png" width="375px" alt="">
   <img src="readme-images/eind3.png" width="375px" alt="">
@@ -214,7 +218,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit was lastig/Is niet gelukt:
-  Het lukte mij helaas niet omervoor te zorgen dat wanneer de gebruiker handmatig scrollt, de bolletjes ook meebewegen en rood worden op de juiste slide
+  Het lukte mij helaas niet omervoor te zorgen dat wanneer de gebruiker handmatig scrollt, de bolletjes ook meebewegen en rood worden op de juiste slide.
 
   <img src="readme-images/foutss.png" width="375px" alt="foto war je kunt zien dat de knopjes niet overeen komen met de scrollbar">
 </details>
@@ -236,5 +240,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   7. alle opdrachten uit de les
   8. https://cssgridgarden.com/#nl
   9. https://www.w3schools.com/html/html_favicon.asp
+  10. https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
 
 </details>
