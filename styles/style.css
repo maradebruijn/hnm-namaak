@@ -108,7 +108,7 @@
   .titeltekst p::after{
       content: "";
       display: inline;
-      background: url(../images/pijltje.svg) no-repeat;
+      background: url(images/pijltje.svg) no-repeat;
       background-position: center center;
       padding: 0 1em;
   }
@@ -474,13 +474,13 @@
   
   .spooky section:first-of-type::after{
       content: "";
-      background: url(../images/plus.svg) no-repeat;
+      background: url(images/plus.svg) no-repeat;
       background-position: center center;
       padding: 0 2em;
   }
   
   .min section:first-of-type::after{
-    background: url(../images/min.svg) no-repeat;
+    background: url(images/min.svg) no-repeat;
     background-position: center center;
   }
 
