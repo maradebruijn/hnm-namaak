@@ -1,0 +1,722 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  
+  
+  
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+
+
+  /* In dit gedeelte zet ik alle algemene code neer, die ik over bijna heel mijn website gebruik */
+
+
+  :root {
+      /* startje */
+      --color-background: #faf9f8;
+      --color-details: red;
+      --color-other1: white;
+      --color-other2: black;
+      --color-other3: gray;
+      --color-other4: lightgray;
+      --general-size: 21.375em;
+  }
+  
+  @font-face {
+      font-family: "HMsans";
+      src:url("/fonts/HM-Sans-Regular/HM-Sans-Regular.ttf")
+  }
+  
+  html{
+      scroll-behavior: smooth;
+  }
+  
+  body{
+      margin: 0;
+  }
+  
+  ul{
+      scroll-behavior: smooth;
+  }
+  
+  
+  /****************/
+  /*     TEXT     */
+  /****************/
+  
+
+  /* code voor al mijn text, waaronder linkjes (a) */
+
+
+  h1, h2, h3, h4, p, a{
+      font-family: "HMsans";
+  }
+  
+  h1{
+    color: transparent;
+    font-size: 0.1em;
+  }
+
+ .members{
+      margin: 7em 2em 2em 2em;
+      font-size: .9em;
+      font-weight:300;
+      text-align: center;
+  }
+
+  h3{
+      font-size: 1.3em;
+  }
+  
+  h4{
+      font-size: 1.2em;
+  }
+  
+  p{
+      font-size: .9em;
+  }
+
+  a{
+    color: var(--color-other2);
+    text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  .titeltekst{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .titeltekst p{
+      text-decoration: underline;
+      line-height: 4em;
+  }
+  
+  .titeltekst p::after{
+      content: "";
+      display: inline;
+      background: url(/images/pijltje.svg) no-repeat;
+      background-position: center center;
+      padding: 0 1em;
+  }
+  
+  
+  /******************************/
+  /*       ronde knopjes        */
+  /******************************/
+  
+
+  /* code voor de kleine navigatie-bolletjes die onder de scrollgroups staan */
+
+
+  .knop{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1em;
+      gap: 1.5em;
+  }
+  
+  .knop button{
+      width: 1em;
+      height: 1em;
+      border-style: solid;
+      border-radius: 100%;
+      border-width: .1em;
+      padding: 0;
+  }
+  
+  .unclicked{
+      border-color: var(--color-other2);
+      background: transparent;
+  }
+  
+  .knop button:hover{
+      border-color: var(--color-details);
+  }
+  
+  .clicked{
+      border-color: var(--color-details);
+      background: var(--color-details);
+  }
+  
+  
+  /****************/
+  /*  navigatie   */
+  /****************/
+
+  nav button{
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    height: 1.2em;
+    align-items: center;
+    margin-top: 0.2em;
+  }
+
+  /****************/
+  /*    HEADER    */
+  /****************/
+  
+  body{
+      background-color: var(--color-background);
+  }
+  
+  header{
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background-color: var(--color-background);
+      top: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 20;
+  }
+
+  header img{
+      height: 1.5em;
+  }
+  
+  header ul{
+      display: flex;
+      list-style-type: none;
+      gap: 1.5em;
+      margin: 0;
+      margin-right: 1em;
+  }
+  
+  .profieldd{
+      display: none;
+      position: absolute;
+      float: left;
+      width: 70%;
+      padding-bottom: .5em;
+      background-color: var(--color-background);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      left:0;
+  }
+  
+  .profieldd h2{
+      text-align: center;
+      font-size: 1.2em;
+      margin: 1em;
+      padding: 1em 0;
+      color: var(--color-other1);
+      background-color: var(--color-other2);
+  }
+  
+  .profieldd h2:hover{
+      background-color: var(--color-other3);
+  }
+  
+  .profieldd p{
+      margin-left: 1em;
+  }
+  
+  .profieldd a:nth-of-type(4){
+      color: var(--color-other3);
+      font-size: smaller;
+  }
+  
+  .profiel:hover .profieldd{
+      display: block;
+  } 
+  
+  
+  .dance{
+    animation: dance .7s;
+  }
+
+  .rdance{
+    animation: rdance .7s;
+  }
+
+  @keyframes dance{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+    @keyframes rdance {
+        from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+          }
+        }
+  
+  /* https://www.w3schools.com/css/css3_animations.asp 
+  https://linuxhint.com/rotate-animation-css/ */
+
+
+  /******************************/
+  /*   section eerste blokje    */
+  /******************************/
+  .block1{
+      display: flex;
+      height: var(--general-size);
+      margin: 0 auto;
+      justify-content: center;
+  }
+  
+  .img1{
+      height: var(--general-size);
+  }
+  
+  /******************************/
+  /*       scoll group 1        */
+  /******************************/
+  
+  .tussendoor{
+      margin: 0 auto;
+      width: var(--general-size);
+  }
+  
+  .tussendoor ul{
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 0;
+      gap: 1.7em;
+  }
+  
+  .tussendoor li{
+      scroll-snap-align: start;
+      width: 6em;
+  }
+  
+  .tussendoor img{
+      width: 6em;
+  }
+  
+  .tussendoor p{
+      text-transform: capitalize;
+      text-align: center;
+  }
+  
+  /******************************/
+  /*       scoll group 2        */
+  /******************************/
+  
+  .scrollgroup2{
+      margin: 0 auto;
+      margin-top: 3em;
+      width: var(--general-size);
+  }
+
+  .scrollgroup2 a{
+    text-decoration: none;
+  }
+
+  .scrollgroup2 a:hover{
+    text-decoration: underline;
+  }
+  
+  .scrollgroup2 ul{
+      display: grid;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 1em;
+      gap: 1.7em;
+  }
+  
+  .scrollgroup2 li a{
+      scroll-snap-align: start;
+      display: grid;
+      grid-template-rows: 1fr 1fr .5fr;
+      grid-template-columns: 2fr 1fr 1fr;
+      width: var(--general-size);
+      height: auto;
+      background-color: var(--color-other1);
+  }
+  
+  .scrollgroup2 img{
+      width: 100%;
+  }
+  
+  .scrollgroup2 li img:first-of-type{
+      grid-column: 1/1;
+      grid-row: 1/3;
+  }
+  
+  .scrollgroup2 li img:nth-of-type(2){
+      grid-column: 2/2;
+      grid-row: 1/span 1;
+  }
+  
+  .scrollgroup2 li img:nth-of-type(3){
+      grid-column: 3/3;
+      grid-row: 1/span 1;
+  }
+  
+  .scrollgroup2 li img:nth-of-type(4){
+      grid-column: 2/2;
+      grid-row: 2/span 1;
+  }
+  
+  .scrollgroup2 li img:nth-of-type(5){
+      grid-column: 3/3;
+      grid-row: 2/span 1;
+  }
+  
+  .scrollgroup2 li section{
+      display: grid;
+      grid-column: 1/-1;
+  
+      grid-template-columns: 1fr 5fr;
+      grid-template-rows: 1fr 1fr;
+  }
+  
+  .scrollgroup2 li section img{
+      width: 3em;
+      height: auto;
+      grid-row: 1/-1;
+      margin: .5em;
+      align-self: center;
+  }
+  
+  .scrollgroup2 p, .scrollgroup2 h4{
+      margin: 0;
+  }
+  
+  .scrollgroup2 h4{
+      text-transform: capitalize;
+      margin-top: .5em;
+  }
+  
+  /******************************/
+  /*       scoll group 3        */
+  /******************************/
+  
+  .scrollgroup3{
+      margin: 0 auto 2em auto;
+      width: var(--general-size);
+  }
+  
+  .scrollgroup3 ul{
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 0;
+      gap: 1.7em;
+  }
+  
+  .scrollgroup3 li{
+      scroll-snap-align: start;
+      width: 6em;
+  }
+  
+  .scrollgroup3 img{
+      width: 6em;
+  }
+  
+  .scrollgroup3 li p{
+      text-transform: capitalize;
+      text-align: center;
+      margin-top: 0;
+      text-transform: capitalize;
+  }
+  
+  /******************************/
+  /*    spooky styles blokje    */
+  /******************************/
+  
+  .spooky{
+      background-color: var(--color-other1);
+      width: var(--general-size);
+      margin: 0 auto;
+  }
+  
+  .spooky section:first-of-type{
+      display: block;
+      padding: 1.5em;
+      text-align: center;
+      background-color: var(--color-other2);
+  }
+  
+  .spooky h2{
+      color: var(--color-other1);
+      text-transform: capitalize;
+      margin: 0;
+  }
+  
+  .spooky p{
+      color: var(--color-other1);
+      margin: 0 1em;
+      font-size: smaller;
+  }
+  
+  .spooky section:first-of-type::after{
+      content: "";
+      background: url(/images/plus.svg) no-repeat;
+      background-position: center center;
+      padding: 0 2em;
+  }
+  
+  .min section:first-of-type::after{
+    background: url(/images/min.svg) no-repeat;
+    background-position: center center;
+  }
+
+  .closed{
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .open{
+      display: block;
+  }
+  
+  .spooky a{
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      width: var(--general-size);
+  }
+  
+  .spooky li h2{
+      color: var(--color-other2);
+      font-size: 1em;
+  }
+  
+  .spooky li:hover{
+      background-color: var(--color-other4);
+  }
+  
+  .spooky a:hover{
+      text-decoration: none;
+  }
+  
+  
+  /******************************/
+  /*   terugroepings blokje     */
+  /******************************/
+  
+  .block2{
+      display: grid;
+      width: var(--general-size);
+      height: var(--general-size);
+      margin: 0 auto;
+      margin-top: 1em;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .ablock:hover{
+      text-decoration: none;
+  }
+
+  .img2{
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+      width: var(--general-size);
+  }
+  
+  .block2 section{
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+      background: linear-gradient(180deg,transparent 50%,rgba(0,0,0,.35));
+      background-size: contain;
+      z-index: 2;
+  }
+  
+  .block2 h3{
+      grid-column: 1/-1;
+      grid-row: 6/6;
+      text-align: center;
+      color: var(--color-other1);
+      z-index: 3;
+  }
+  
+  /******************************/
+  /*      laatste sectie        */
+  /******************************/
+  
+  .lastpart{
+      background-color: rgb(244, 237, 221);
+      width: 100%;
+      padding-bottom: 2em;
+  }
+  
+  .magazine{
+      text-transform: uppercase;
+      text-align: center;
+  }
+  
+  .magazine h2{
+      padding-top: 2.3em;
+  }
+  
+  .magazine h2, .magazine p{
+      margin-bottom: 1em;
+      margin-top: 2em;
+  }
+
+  .story{
+      width: 17em;
+      margin: 0 auto;
+      margin-top: 2.5em;
+      background-color: var(--color-other1);
+      text-align: center;
+      padding-bottom: 1em;
+  }
+  
+  .story img{
+      width: 17em;
+  }
+  
+  .story h2{
+      font-size: .8em;
+      text-transform: uppercase;
+  }
+
+  .magazine a:hover, .story a:hover{
+    text-decoration: none;
+}
+
+  .magazine p:last-of-type, .story p:last-of-type{
+    text-decoration: underline;
+}
+
+  /******************************/
+  /*          footer            */
+  /******************************/
+  
+  footer{
+      background-color: var(--color-other4);
+  }
+  
+  footer h2{
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 1em;
+    margin-left: 5%;
+  }
+
+  footer a h2{
+    font-size: 1em;
+    color: var(--color-other2);
+  }
+
+  footer h3{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  footer li{
+    list-style-type: none;
+  }
+
+  footer a{
+    color: var(--color-other2);
+    text-decoration: none;
+
+  }
+
+  footer p{
+    text-align: center;
+    margin: 1em;
+  }
+
+  footer img{
+    width: 2em;
+  }
+
+  footer p:last-of-type{
+    font-size: .8em;
+    padding-top: 2em;
+  }
+
+  footer article:hover{
+    color: var(--color-details);
+}
+
+  footer article{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer article img{
+    margin-right: 1em;
+  }
+
+
+
+
+
+
+.lees{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lees h2{
+    padding: 0;
+}
+
+.lees img{
+    width: 1.5em;
+    margin-right: 1em;
+}
+
+.lees:hover, .lees:hover h2{
+    color: var(--color-details);
+}
+
+
+
+
+
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.socialmedia img{
+    margin-left: 0;
+    margin-top: 2em;
+}
+
+.socialmedia img:hover{
+    filter: invert(53%) sepia(0%) saturate(0%) hue-rotate(146deg) brightness(95%) contrast(88%);
+}
+
+/* https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element */
+/* https://codepen.io/sosuke/pen/Pjoqqp */
+
+
+.eindplaatje{
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+}
