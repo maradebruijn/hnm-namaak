@@ -77,79 +77,50 @@ var bron = document.querySelector('#bron')
 rec1.addEventListener("click", function(){
     recslide1.scrollIntoView({ block: "center", inline: "start"});
 
-    rec1.classList.remove('unclicked');
     rec1.classList.add('clicked');
 
-    rec2.classList.add('unclicked');
     rec2.classList.remove('clicked');
-    rec3.classList.add('unclicked');
     rec3.classList.remove('clicked');
 })
     
 rec2.addEventListener("click", function(){
     recslide2.scrollIntoView({ block: "center", inline: "start" });
     
-    rec2.classList.remove('unclicked');
     rec2.classList.add('clicked');
-    
-    rec1.classList.add('unclicked');
+
     rec1.classList.remove('clicked');
-    rec3.classList.add('unclicked');
     rec3.classList.remove('clicked');
 })
     
 rec3.addEventListener("click", function(){
     recslide3.scrollIntoView({ block: "center", inline: "start" });
 
-    rec3.classList.remove('unclicked');
     rec3.classList.add('clicked');
     
-    rec1.classList.add('unclicked');
     rec1.classList.remove('clicked');
-    rec2.classList.add('unclicked');
     rec2.classList.remove('clicked');
-})
-
-recslide1.addEventListener("scroll", (event) =>{
-    
-    rec1.classList.add('unclicked');
-    rec1.classList.remove('clicked');
-    rec2.classList.remove('unclicked');
-    rec2.classList.add('clicked');
-
-
 })
 
 
 knop1.addEventListener("click", function(){
     collage1.scrollIntoView({ block: "center" });
 
-    knop1.classList.remove('unclicked');
     knop1.classList.add('clicked');
     
-    knop2.classList.add('unclicked');
     knop2.classList.remove('clicked');
-    knop3.classList.add('unclicked');
     knop3.classList.remove('clicked');
-    knop4.classList.add('unclicked');
     knop4.classList.remove('clicked');
-    knop5.classList.add('unclicked');
     knop5.classList.remove('clicked');
 })
 
 knop2.addEventListener("click", function(){
     collage2.scrollIntoView({ block: "center" });
 
-    knop2.classList.remove('unclicked');
     knop2.classList.add('clicked');
     
-    knop1.classList.add('unclicked');
     knop1.classList.remove('clicked');
-    knop3.classList.add('unclicked');
     knop3.classList.remove('clicked');
-    knop4.classList.add('unclicked');
     knop4.classList.remove('clicked');
-    knop5.classList.add('unclicked');
     knop5.classList.remove('clicked');
 
 })
@@ -157,48 +128,33 @@ knop2.addEventListener("click", function(){
 knop3.addEventListener("click", function(){
     collage3.scrollIntoView({ block: "center" });
 
-    knop3.classList.remove('unclicked');
     knop3.classList.add('clicked');
     
-    knop1.classList.add('unclicked');
     knop1.classList.remove('clicked');
-    knop2.classList.add('unclicked');
     knop2.classList.remove('clicked');
-    knop4.classList.add('unclicked');
     knop4.classList.remove('clicked');
-    knop5.classList.add('unclicked');
     knop5.classList.remove('clicked');
 })
 
 knop4.addEventListener("click", function(){
     collage4.scrollIntoView({ block: "center" });
 
-    knop4.classList.remove('unclicked');
     knop4.classList.add('clicked');
     
-    knop1.classList.add('unclicked');
     knop1.classList.remove('clicked');
-    knop2.classList.add('unclicked');
     knop2.classList.remove('clicked');
-    knop3.classList.add('unclicked');
     knop3.classList.remove('clicked');
-    knop5.classList.add('unclicked');
     knop5.classList.remove('clicked');
 })
 
 knop5.addEventListener("click", function(){
     collage5.scrollIntoView({ block: "center" });
 
-    knop5.classList.remove('unclicked');
     knop5.classList.add('clicked');
     
-    knop2.classList.add('unclicked');
     knop2.classList.remove('clicked');
-    knop3.classList.add('unclicked');
     knop3.classList.remove('clicked');
-    knop4.classList.add('unclicked');
     knop4.classList.remove('clicked');
-    knop1.classList.add('unclicked');
     knop1.classList.remove('clicked');
 })
 
@@ -208,56 +164,40 @@ knop5.addEventListener("click", function(){
 mknop1.addEventListener("click", function(){
     merk1.scrollIntoView({ block: "center", inline: "start" });
 
-    mknop1.classList.remove('unclicked');
     mknop1.classList.add('clicked');
     
-    mknop2.classList.add('unclicked');
     mknop2.classList.remove('clicked');
-    mknop3.classList.add('unclicked');
     mknop3.classList.remove('clicked');
-    mknop4.classList.add('unclicked');
     mknop4.classList.remove('clicked');
 })
 
 mknop2.addEventListener("click", function(){
     merk2.scrollIntoView({ block: "center", inline: "start" });
 
-    mknop2.classList.remove('unclicked');
     mknop2.classList.add('clicked');
     
-    mknop1.classList.add('unclicked');
     mknop1.classList.remove('clicked');
-    mknop3.classList.add('unclicked');
     mknop3.classList.remove('clicked');
-    mknop4.classList.add('unclicked');
     mknop4.classList.remove('clicked');
 })
 
 mknop3.addEventListener("click", function(){
     merk3.scrollIntoView({ block: "center", inline: "start" });
 
-    mknop3.classList.remove('unclicked');
     mknop3.classList.add('clicked');
     
-    mknop1.classList.add('unclicked');
     mknop1.classList.remove('clicked');
-    mknop2.classList.add('unclicked');
     mknop2.classList.remove('clicked');
-    mknop4.classList.add('unclicked');
     mknop4.classList.remove('clicked');
 })
 
 mknop4.addEventListener("click", function(){
     merk4.scrollIntoView({ block: "center", inline: "start" });
 
-    mknop4.classList.remove('unclicked');
     mknop4.classList.add('clicked');
     
-    mknop1.classList.add('unclicked');
     mknop1.classList.remove('clicked');
-    mknop2.classList.add('unclicked');
     mknop2.classList.remove('clicked');
-    mknop3.classList.add('unclicked');
     mknop3.classList.remove('clicked');
 })
     
