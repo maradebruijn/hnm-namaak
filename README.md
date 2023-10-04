@@ -241,5 +241,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   8. https://cssgridgarden.com/#nl
   9. https://www.w3schools.com/html/html_favicon.asp
   10. https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+  11. https://www.pluralsight.com/guides/how-to-hide-text-from-screen-readers
+
+  ### WCAG checklist
+
+  <img src="readme-images/wcag1.png" width="375px" alt="foto war je kunt zien dat de knopjes niet overeen komen met de scrollbar">
+  <img src="readme-images/wcag2.png" width="375px" alt="foto war je kunt zien dat de knopjes niet overeen komen met de scrollbar">
+  <img src="readme-images/wcag3.png" width="375px" alt="foto war je kunt zien dat de knopjes niet overeen komen met de scrollbar">
+  <img src="readme-images/wcag4.png" width="375px" alt="foto war je kunt zien dat de knopjes niet overeen komen met de scrollbar">
+  <img src="readme-images/wcag5.png" width="375px" alt="foto war je kunt zien dat de knopjes niet overeen komen met de scrollbar">
 
 </details>
