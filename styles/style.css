@@ -419,13 +419,14 @@
       align-self: center;
   }
   
-  .scrollgroup2 p, .scrollgroup2 h4{
+  .scrollgroup2 p, .scrollgroup2 h3{
       margin: 0;
   }
   
-  .scrollgroup2 h4{
+  .scrollgroup2 h3{
       text-transform: capitalize;
       margin-top: .5em;
+      font-size: 1.2em;
   }
   
   /******************************/
